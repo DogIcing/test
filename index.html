@@ -1,1 +1,9 @@
-<h1>test</h1>
+<script>
+var myImg = new Image();
+myImg.src = 'image.jpg';
+var context = document.getElementById('canvas').getContext('2d');
+context.drawImage(myImg, 0, 0);
+var data = context.getImageData(x, y, 1, 1).data;
+</script>
+
+<p>context</p>
